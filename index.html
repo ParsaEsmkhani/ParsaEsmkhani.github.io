@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal academic website for Parsa Esmkhani, computer science honours student at Memorial University of Newfoundland."
+    />
+    <title>Parsa Esmkhani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">Parsa Esmkhani</a>
+        <div class="nav-links">
+          <a href="research.html">Research</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="projects.html">Projects</a>
+          <a href="awards.html">Awards</a>
+          <a href="volunteering.html">Service</a>
+          <a href="cv.html">CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <aside class="profile" aria-label="Profile summary">
+        <img
+          class="profile-photo"
+          src="assets/profile.jpg"
+          alt="Portrait of Parsa Esmkhani"
+          width="240"
+          height="240"
+        />
+        <p class="photo-caption">(me after finishing my first ever half marathon!)</p>
+        <h1>Parsa Esmkhani</h1>
+        <p class="title-line">Computer Science Honours Student</p>
+        <p class="title-line">Memorial University of Newfoundland</p>
+        <p class="location">St. John's, NL</p>
+
+        <ul class="contact-list" aria-label="Contact links">
+          <li>
+            <a class="contact-link" href="mailto:pesmkhani@mun.ca">
+              <span class="link-icon mail-icon" aria-hidden="true"></span>
+              <span>pesmkhani@mun.ca</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-link" href="https://www.linkedin.com/in/parsaesmkhani/details/experience/">
+              <span class="link-icon linkedin-icon" aria-hidden="true"></span>
+              <span>parsaesmkhani</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="content" aria-label="Main content">
+        <section class="section-block">
+          <h2>About Me</h2>
+          <p>
+            Hi! I am a B.Sc. Honours student in Computer Science at Memorial
+            University of Newfoundland, with a minor in Mathematics and a
+            concentration in Theory of Computation. My interests include social
+            choice theory, game theory, logic, complexity theory, cognition,
+            fairness theory, and graph theory.
+            <em>Anything with the word "theory" in it at this point.</em>
+          </p>
+          <p>
+            In my spare time I enjoy cooking, lifting, playing the piano,
+            running, and learning the most random pieces of information which
+            occasionally fundamentally change how I view life.
+          </p>
+        </section>
+
+        <section class="section-block">
+          <h2>Education</h2>
+          <article class="entry">
+            <div class="entry-heading">
+              <h3>B.Sc. (Honours), Computer Science; Minor in Mathematics</h3>
+              <p>Sep 2021 - Dec 2026 (expected)</p>
+            </div>
+            <p class="entry-meta">Memorial University of Newfoundland, St. John's, NL</p>
+            <ul>
+              <li>GPA: 3.97/4.00; concentration in Theory of Computation.</li>
+            </ul>
+          </article>
+          <div class="coursework">
+            <p class="coursework-note">Relevant coursework. Grades shown in parentheses.</p>
+            <div class="coursework-grid">
+              <div class="coursework-column">
+                <article class="course-group">
+                  <h3>Computation and Complexity</h3>
+                  <ul>
+                    <li>COMP 3602: Theory of Computation (97)</li>
+                    <li>COMP 4742: Computational Complexity (100)</li>
+                  </ul>
+                </article>
+                <article class="course-group">
+                  <h3>Logic Theory and Application</h3>
+                  <ul>
+                    <li>COMP 1002: Intro to Logic (100)</li>
+                    <li>PHIL 2030: Logic (96)</li>
+                    <li>PHIL 2031: Intermediate Logic (95)</li>
+                    <li>COMP 4754: Database Systems (100)</li>
+                  </ul>
+                </article>
+              </div>
+              <div class="coursework-column">
+                <article class="course-group">
+                  <h3>Algorithms and Structures</h3>
+                  <ul>
+                    <li>COMP 2002: Data Structures and Algorithms (93)</li>
+                    <li>COMP 3200: Algorithmic Techniques for AI (92)</li>
+                    <li>MATH 3240: Applied Graph Theory (87)</li>
+                    <li>COMP 3600: Algorithm Design and Analysis (91)</li>
+                    <li>COMP 4750: Intro to NLP (94)</li>
+                  </ul>
+                </article>
+                <article class="course-group">
+                  <h3>Game Theory</h3>
+                  <ul>
+                    <li>ECON 4200: Game Theory (100)</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+          <article class="entry education-secondary">
+            <div class="entry-heading">
+              <h3>International Baccalaureate (IB) Diploma</h3>
+              <p>Sep 2018 - May 2020</p>
+            </div>
+            <p class="entry-meta">Mehr-e-taban International School, Shiraz, Iran</p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="current-year">2026</span> Parsa Esmkhani.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -362,6 +362,72 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
+.presentation-list {
+  display: grid;
+  gap: 26px;
+}
+
+.presentation-item {
+  align-items: start;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 190px minmax(0, 1fr);
+}
+
+.presentation-preview {
+  align-items: center;
+  aspect-ratio: 4 / 3;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--muted);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.presentation-preview:hover,
+.presentation-preview:focus-visible {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.presentation-preview img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.presentation-placeholder {
+  padding: 18px;
+  text-align: center;
+}
+
+.presentation-placeholder span {
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.presentation-details h3 {
+  font-size: 1.02rem;
+  line-height: 1.35;
+  margin: 0 0 7px;
+}
+
+.presentation-meta,
+.presentation-links {
+  color: var(--muted);
+  margin: 0;
+}
+
+.presentation-links {
+  margin-top: 5px;
+}
+
 .award-list strong {
   display: block;
   font-weight: 700;
@@ -507,6 +573,11 @@ a:focus-visible {
     white-space: normal;
   }
 
+  .presentation-item {
+    gap: 16px;
+    grid-template-columns: 128px minmax(0, 1fr);
+  }
+
   .entry-heading {
     display: block;
   }
@@ -533,5 +604,13 @@ a:focus-visible {
 
   .contact-list {
     grid-template-columns: 1fr;
+  }
+
+  .presentation-item {
+    grid-template-columns: 1fr;
+  }
+
+  .presentation-preview {
+    max-width: 220px;
   }
 }

@@ -88,6 +88,10 @@ a:focus-visible {
   padding: 48px 24px 32px;
 }
 
+.page-shell--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .profile {
   align-self: start;
   position: sticky;

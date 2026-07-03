@@ -249,7 +249,14 @@ a:focus-visible {
   color: var(--muted);
   display: inline-block;
   font-weight: 700;
-  min-width: 52px;
+  min-width: 160px;
+}
+
+.simple-list small {
+  color: var(--muted);
+  display: block;
+  font-size: 0.92rem;
+  margin: 3px 0 0 164px;
 }
 
 .entry-list {
@@ -476,6 +483,15 @@ a:focus-visible {
 
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .simple-list span {
+    display: block;
+    min-width: 0;
+  }
+
+  .simple-list small {
+    margin-left: 0;
   }
 
   .coursework-grid {

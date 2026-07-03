@@ -82,14 +82,14 @@ a:focus-visible {
 .page-shell {
   display: grid;
   gap: 56px;
-  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   margin: 0 auto;
   max-width: 1080px;
   padding: 48px 24px 32px;
 }
 
-.page-shell--single {
-  grid-template-columns: minmax(0, 1fr);
+.page-shell--with-profile {
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
 }
 
 .profile {

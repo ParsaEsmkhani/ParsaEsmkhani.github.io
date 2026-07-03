@@ -80,16 +80,19 @@ a:focus-visible {
 }
 
 .page-shell {
-  display: grid;
-  gap: 56px;
-  grid-template-columns: minmax(0, 1fr);
   margin: 0 auto;
   max-width: 1080px;
   padding: 48px 24px 32px;
 }
 
 .page-shell--with-profile {
+  display: grid;
+  gap: 56px;
   grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+}
+
+.page-shell:not(.page-shell--with-profile) .content {
+  max-width: 744px;
 }
 
 .profile {
@@ -508,9 +511,13 @@ a:focus-visible {
     gap: 16px;
   }
 
-  .page-shell {
+  .page-shell--with-profile {
     display: block;
     padding-top: 28px;
+  }
+
+  .page-shell:not(.page-shell--with-profile) .content {
+    max-width: none;
   }
 
   .profile {

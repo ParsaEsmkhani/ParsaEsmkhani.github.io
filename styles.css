@@ -102,7 +102,7 @@ a:focus-visible {
 .research-layout {
   align-items: start;
   display: grid;
-  gap: 48px;
+  gap: 96px;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 }
 
@@ -112,8 +112,20 @@ a:focus-visible {
   padding-top: 0;
 }
 
+.research-layout .entry-list {
+  gap: 32px;
+}
+
+.research-layout .entry + .entry {
+  padding-top: 32px;
+}
+
+.research-layout .presentation-list {
+  gap: 40px;
+}
+
 .research-layout .presentation-item {
-  gap: 12px;
+  gap: 18px;
   grid-template-columns: 1fr;
 }
 
@@ -547,7 +559,7 @@ a:focus-visible {
   }
 
   .research-layout {
-    gap: 34px;
+    gap: 48px;
     grid-template-columns: 1fr;
   }
 

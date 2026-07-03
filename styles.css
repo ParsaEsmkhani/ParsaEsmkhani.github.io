@@ -95,6 +95,32 @@ a:focus-visible {
   max-width: 744px;
 }
 
+.page-shell--research .content {
+  max-width: none;
+}
+
+.research-layout {
+  align-items: start;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.research-layout .section-block + .section-block {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.research-layout .presentation-item {
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.research-layout .presentation-preview {
+  max-width: 100%;
+}
+
 .profile {
   align-self: start;
   position: sticky;
@@ -518,6 +544,11 @@ a:focus-visible {
 
   .page-shell:not(.page-shell--with-profile) .content {
     max-width: none;
+  }
+
+  .research-layout {
+    gap: 34px;
+    grid-template-columns: 1fr;
   }
 
   .profile {

@@ -768,19 +768,22 @@ a:focus-visible {
   .profile {
     display: grid;
     grid-template-columns: 112px minmax(0, 1fr);
+    align-items: start;
     column-gap: 18px;
     position: static;
   }
 
   .profile-photo {
-    grid-row: span 4;
+    grid-column: 1;
+    grid-row: 1;
     height: 112px;
     width: 112px;
   }
 
   .photo-caption {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 2;
+    margin-top: 6px;
     max-width: 112px;
     text-align: center;
     transform: none;
@@ -789,14 +792,26 @@ a:focus-visible {
   }
 
   .profile h1 {
+    grid-column: 2;
+    grid-row: 1;
     font-size: 1.35rem;
     margin-top: 0;
+  }
+
+  .title-line {
+    grid-column: 2;
+  }
+
+  .location {
+    grid-column: 2;
+    margin-top: 6px;
   }
 
   .contact-list {
     grid-column: 1 / -1;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+    margin-top: 16px;
   }
 
   .content {
@@ -880,6 +895,10 @@ a:focus-visible {
   .profile-photo {
     height: 92px;
     width: 92px;
+  }
+
+  .photo-caption {
+    max-width: 92px;
   }
 
   .contact-list {

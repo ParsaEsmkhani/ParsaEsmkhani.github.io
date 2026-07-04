@@ -374,6 +374,35 @@ a:focus-visible {
   width: 100%;
 }
 
+.video-preview {
+  position: relative;
+}
+
+.video-preview::after {
+  background: rgba(34, 40, 49, 0.82);
+  border-radius: 50%;
+  color: #fff;
+  content: "";
+  height: 42px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+}
+
+.video-preview::before {
+  border-bottom: 9px solid transparent;
+  border-left: 14px solid #fff;
+  border-top: 9px solid transparent;
+  content: "";
+  left: calc(50% - 4px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
 .coursework {
   border-top: 1px solid var(--line);
   margin-top: 22px;

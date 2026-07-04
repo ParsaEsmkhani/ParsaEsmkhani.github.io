@@ -384,6 +384,11 @@ a:focus-visible {
   position: relative;
 }
 
+.video-preview:hover,
+.video-preview:focus-visible {
+  box-shadow: 0 10px 22px rgba(37, 84, 108, 0.16);
+}
+
 .video-preview::after {
   background: rgba(34, 40, 49, 0.82);
   border-radius: 50%;
@@ -407,6 +412,19 @@ a:focus-visible {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+}
+
+.video-label {
+  background: rgba(34, 40, 49, 0.88);
+  border-radius: 999px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  left: 10px;
+  line-height: 1;
+  padding: 7px 10px;
+  position: absolute;
 }
 
 .coursework {

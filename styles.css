@@ -76,7 +76,7 @@ a:focus-visible {
 .page-shell {
   margin: 0 auto;
   max-width: 1400px;
-  padding: 52px 48px 36px;
+  padding: 32px 48px 36px;
 }
 
 .page-shell:not(.page-shell--with-profile) {
@@ -288,7 +288,7 @@ a:focus-visible {
 }
 
 .content {
-  padding: 4px 0 0;
+  padding: 0;
 }
 
 .section-block + .section-block {
@@ -301,7 +301,7 @@ a:focus-visible {
   font-size: 1.68rem;
   letter-spacing: 0;
   line-height: 1.25;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
 }
 
 .section-block p {
@@ -742,7 +742,7 @@ a:focus-visible {
 
   .page-shell--with-profile {
     display: block;
-    padding-top: 28px;
+    padding-top: 18px;
   }
 
   .page-shell,

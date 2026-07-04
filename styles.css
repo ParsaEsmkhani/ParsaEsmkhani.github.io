@@ -75,7 +75,7 @@ a:focus-visible {
 
 .page-shell {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1400px;
   padding: 52px 48px 36px;
 }
 
@@ -86,8 +86,8 @@ a:focus-visible {
 
 .page-shell--with-profile {
   display: grid;
-  gap: 56px;
-  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 72px;
+  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
 }
 
 .page-shell:not(.page-shell--with-profile) .content {

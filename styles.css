@@ -85,6 +85,10 @@ a:focus-visible {
   padding: 48px 24px 32px;
 }
 
+.page-shell:not(.page-shell--with-profile) {
+  max-width: 980px;
+}
+
 .page-shell--with-profile {
   display: grid;
   gap: 56px;
@@ -92,7 +96,7 @@ a:focus-visible {
 }
 
 .page-shell:not(.page-shell--with-profile) .content {
-  max-width: 744px;
+  max-width: 860px;
 }
 
 .page-shell--research .content {
@@ -281,7 +285,7 @@ a:focus-visible {
 .simple-list li,
 .award-list li,
 .entry li {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 }
 
 .simple-list li:last-child,
@@ -306,12 +310,12 @@ a:focus-visible {
 
 .entry-list {
   display: grid;
-  gap: 24px;
+  gap: 22px;
 }
 
 .entry + .entry {
   border-top: 1px solid var(--line);
-  padding-top: 24px;
+  padding-top: 22px;
 }
 
 .entry h3 {
@@ -322,6 +326,7 @@ a:focus-visible {
 
 .entry p {
   margin-bottom: 10px;
+  max-width: 76ch;
 }
 
 .entry-heading {
@@ -338,6 +343,7 @@ a:focus-visible {
   font-weight: 600;
   margin: 0;
   text-align: right;
+  white-space: nowrap;
 }
 
 .entry-meta {

@@ -98,9 +98,10 @@ a:focus-visible {
 }
 
 .page-shell--research {
-  max-width: min(1660px, 98vw);
-  padding-left: 18px;
-  padding-right: 18px;
+  max-width: none;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .page-shell--projects {

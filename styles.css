@@ -102,7 +102,9 @@ a:focus-visible {
 }
 
 .page-shell--projects {
-  max-width: 1280px;
+  max-width: min(1760px, 96vw);
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .page-shell--projects .content {
@@ -324,7 +326,7 @@ a:focus-visible {
 }
 
 .projects-grid {
-  gap: 34px 26px;
+  gap: 44px 42px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 

@@ -346,6 +346,34 @@ a:focus-visible {
   font-style: italic;
 }
 
+.project-feature {
+  align-items: start;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 240px minmax(0, 1fr);
+}
+
+.project-preview {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  display: block;
+  overflow: hidden;
+}
+
+.project-preview:hover,
+.project-preview:focus-visible {
+  border-color: var(--accent);
+}
+
+.project-preview img {
+  aspect-ratio: 4 / 3;
+  display: block;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+}
+
 .coursework {
   border-top: 1px solid var(--line);
   margin-top: 22px;
@@ -640,6 +668,10 @@ a:focus-visible {
     margin-top: 4px;
     text-align: left;
   }
+
+  .project-feature {
+    grid-template-columns: 180px minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 440px) {
@@ -666,5 +698,13 @@ a:focus-visible {
 
   .presentation-preview {
     max-width: 220px;
+  }
+
+  .project-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .project-preview {
+    max-width: 260px;
   }
 }

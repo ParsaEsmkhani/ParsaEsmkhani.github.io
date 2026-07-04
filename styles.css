@@ -97,6 +97,10 @@ a:focus-visible {
   max-width: none;
 }
 
+.page-shell--research {
+  max-width: 1180px;
+}
+
 .page-shell--projects {
   max-width: 1180px;
 }
@@ -108,8 +112,8 @@ a:focus-visible {
 .research-layout {
   align-items: start;
   display: grid;
-  gap: 96px;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 56px;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
 }
 
 .research-layout .section-block + .section-block {
@@ -119,24 +123,28 @@ a:focus-visible {
 }
 
 .research-layout .entry-list {
-  gap: 32px;
+  gap: 24px;
 }
 
 .research-layout .entry + .entry {
-  padding-top: 32px;
+  padding-top: 24px;
 }
 
 .research-layout .presentation-list {
-  gap: 40px;
+  gap: 34px;
 }
 
 .research-layout .presentation-item {
-  gap: 18px;
+  gap: 14px;
   grid-template-columns: 1fr;
 }
 
 .research-layout .presentation-preview {
   max-width: 100%;
+}
+
+.research-layout .presentation-details h3 {
+  font-size: 1rem;
 }
 
 .profile {

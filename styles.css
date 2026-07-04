@@ -107,6 +107,8 @@ a:focus-visible {
 }
 
 .page-shell--projects {
+  margin-left: 0;
+  margin-right: 0;
   max-width: none;
   width: 100%;
   padding-left: 24px;
@@ -351,6 +353,7 @@ a:focus-visible {
   align-items: start;
   gap: 42px 40px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
 }
 
 .entry + .entry {

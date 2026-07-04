@@ -430,8 +430,8 @@ a:focus-visible {
 .projects-grid .entry-heading {
   align-items: start;
   display: grid;
-  gap: 4px;
-  grid-template-rows: minmax(2.7rem, auto) auto;
+  gap: 2px;
+  grid-template-rows: auto auto;
 }
 
 .projects-grid .entry-heading p {

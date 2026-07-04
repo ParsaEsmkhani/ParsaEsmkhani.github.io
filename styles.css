@@ -23,8 +23,8 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.72;
 }
 
 a {
@@ -75,12 +75,13 @@ a:focus-visible {
 
 .page-shell {
   margin: 0 auto;
-  max-width: 1080px;
-  padding: 48px 24px 32px;
+  max-width: 1280px;
+  padding: 52px 48px 36px;
 }
 
 .page-shell:not(.page-shell--with-profile) {
-  max-width: 980px;
+  max-width: none;
+  width: 100%;
 }
 
 .page-shell--with-profile {
@@ -90,7 +91,7 @@ a:focus-visible {
 }
 
 .page-shell:not(.page-shell--with-profile) .content {
-  max-width: 860px;
+  max-width: none;
 }
 
 .page-shell--research .content {
@@ -102,8 +103,8 @@ a:focus-visible {
   margin-right: 0;
   max-width: none;
   width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .page-shell--projects {
@@ -111,8 +112,8 @@ a:focus-visible {
   margin-right: 0;
   max-width: none;
   width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .page-shell--projects .content {
@@ -297,7 +298,7 @@ a:focus-visible {
 }
 
 .section-block h2 {
-  font-size: 1.52rem;
+  font-size: 1.68rem;
   letter-spacing: 0;
   line-height: 1.25;
   margin: 0 0 18px;
@@ -362,7 +363,7 @@ a:focus-visible {
 }
 
 .entry h3 {
-  font-size: 1rem;
+  font-size: 1.07rem;
   line-height: 1.35;
   margin: 0;
 }
@@ -702,9 +703,9 @@ a:focus-visible {
 
 .site-footer {
   color: var(--muted);
-  margin: 0 auto;
-  max-width: 1080px;
-  padding: 8px 24px 36px;
+  margin: 0;
+  max-width: none;
+  padding: 8px 48px 36px;
 }
 
 .site-footer p {
@@ -724,7 +725,7 @@ a:focus-visible {
 
 @media (max-width: 760px) {
   body {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .nav {
@@ -742,6 +743,13 @@ a:focus-visible {
   .page-shell--with-profile {
     display: block;
     padding-top: 28px;
+  }
+
+  .page-shell,
+  .page-shell--research,
+  .page-shell--projects {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .page-shell:not(.page-shell--with-profile) .content {
@@ -855,6 +863,14 @@ a:focus-visible {
 @media (max-width: 440px) {
   .nav-links {
     width: 100%;
+  }
+
+  .page-shell,
+  .page-shell--research,
+  .page-shell--projects,
+  .site-footer {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .profile {

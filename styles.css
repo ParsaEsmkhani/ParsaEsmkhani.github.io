@@ -98,6 +98,8 @@ a:focus-visible {
 }
 
 .page-shell--research {
+  margin-left: 0;
+  margin-right: 0;
   max-width: none;
   width: 100%;
   padding-left: 24px;
@@ -121,6 +123,7 @@ a:focus-visible {
   gap: 64px;
   grid-template-columns: minmax(720px, 1.65fr) minmax(420px, 0.75fr);
   position: relative;
+  width: 100%;
 }
 
 .research-layout .section-block + .section-block {

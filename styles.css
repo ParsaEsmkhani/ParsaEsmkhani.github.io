@@ -346,6 +346,12 @@ a:focus-visible {
   font-style: italic;
 }
 
+.project-note {
+  color: var(--accent-strong);
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
 .project-feature {
   align-items: start;
   display: grid;

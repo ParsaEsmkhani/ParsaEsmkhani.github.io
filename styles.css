@@ -51,17 +51,11 @@ a:focus-visible {
 .nav {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
   max-width: 1080px;
   min-height: 64px;
   padding: 0 24px;
-}
-
-.brand {
-  color: var(--text);
-  font-size: 0.98rem;
-  font-weight: 700;
 }
 
 .nav-links {

@@ -53,9 +53,18 @@ a:focus-visible {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: none;
   min-height: 64px;
-  padding: 0 24px;
+  padding: 0 48px;
+  position: relative;
+}
+
+.site-name {
+  color: var(--text);
+  font-size: 0.98rem;
+  font-weight: 800;
+  left: 48px;
+  position: absolute;
 }
 
 .nav-links {
@@ -743,12 +752,22 @@ a:focus-visible {
     font-size: 15px;
   }
 
+  .site-header {
+    position: static;
+  }
+
   .nav {
     align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+    justify-content: flex-start;
     padding-bottom: 14px;
     padding-top: 14px;
+  }
+
+  .site-name {
+    flex: 0 0 100%;
+    left: auto;
+    position: static;
   }
 
   .nav-links {
@@ -786,24 +805,24 @@ a:focus-visible {
 
   .profile {
     display: grid;
-    grid-template-columns: 112px minmax(0, 1fr);
+    grid-template-columns: 1fr;
     align-items: start;
-    column-gap: 18px;
+    justify-items: center;
     position: static;
   }
 
   .profile-photo {
     grid-column: 1;
     grid-row: 1;
-    height: 112px;
-    width: 112px;
+    height: 148px;
+    width: 148px;
   }
 
   .photo-caption {
     grid-column: 1;
     grid-row: 2;
     margin-top: 6px;
-    max-width: 112px;
+    max-width: 240px;
     font-size: 0.74rem;
     line-height: 1.22;
     text-align: center;
@@ -813,11 +832,7 @@ a:focus-visible {
   }
 
   .profile h1 {
-    grid-column: 2;
-    grid-row: 1;
-    font-size: 1.28rem;
-    line-height: 1.15;
-    margin-top: 0;
+    display: none;
   }
 
   .title-line {
@@ -834,10 +849,11 @@ a:focus-visible {
   }
 
   .contact-list {
-    grid-column: 1 / -1;
+    grid-column: 1;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-bottom: 24px;
     margin-top: 12px;
+    width: 100%;
   }
 
   .contact-list a {
@@ -928,18 +944,17 @@ a:focus-visible {
   }
 
   .profile {
-    column-gap: 14px;
-    grid-template-columns: 84px minmax(0, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .profile-photo {
-    height: 84px;
-    width: 84px;
+    height: 132px;
+    width: 132px;
   }
 
   .photo-caption {
     font-size: 0.68rem;
-    max-width: 84px;
+    max-width: 220px;
   }
 
   .profile h1 {

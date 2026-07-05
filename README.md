@@ -5,9 +5,10 @@ A compact academic personal website for Parsa Esmkhani, built with plain HTML, C
 ## Edit
 
 - Home page: `index.html`
-- Section pages: `research.html`, `teaching.html`, `projects.html`, `awards.html`, `volunteering.html`, and `cv.html`
+- Section pages: `research.html`, `teaching.html`, `projects.html`, `awards.html`, and `volunteering.html`
 - Visual styling: `styles.css`
 - Profile photo: `assets/profile.jpg`
+- Downloadable CV: `assets/parsa-esmkhani-cv.pdf`
 
 The site can be hosted on GitHub Pages or any static web host.
 

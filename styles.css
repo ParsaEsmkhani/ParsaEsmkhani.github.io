@@ -287,6 +287,21 @@ a:focus-visible {
   line-height: 1;
 }
 
+.cv-icon {
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  display: inline-flex;
+  font-size: 0.62rem;
+  font-weight: 800;
+  justify-content: center;
+  letter-spacing: 0;
+}
+
+.cv-icon::before {
+  display: none;
+}
+
 .content {
   padding: 0;
 }

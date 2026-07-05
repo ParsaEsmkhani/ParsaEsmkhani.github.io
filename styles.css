@@ -185,8 +185,11 @@ a:focus-visible {
 
 .profile {
   align-self: start;
+  display: grid;
+  justify-items: center;
   position: sticky;
   top: 104px;
+  width: 240px;
 }
 
 .profile-photo {
@@ -206,6 +209,7 @@ a:focus-visible {
   font-size: 1.55rem;
   line-height: 1.2;
   margin: 18px 0 8px;
+  text-align: center;
 }
 
 .photo-caption {
@@ -215,7 +219,6 @@ a:focus-visible {
   margin: 10px 0 0;
   max-width: none;
   text-align: center;
-  transform: translateX(calc(120px - 50%));
   white-space: nowrap;
   width: max-content;
 }
@@ -236,6 +239,7 @@ a:focus-visible {
   list-style: none;
   margin: 16px 0 0;
   padding: 0;
+  width: 100%;
 }
 
 .contact-list a {
@@ -807,6 +811,7 @@ a:focus-visible {
     align-items: start;
     justify-items: center;
     position: static;
+    width: 100%;
   }
 
   .profile-photo {
@@ -820,13 +825,12 @@ a:focus-visible {
     grid-column: 1;
     grid-row: 2;
     margin-top: 6px;
-    max-width: 240px;
     font-size: 0.74rem;
     line-height: 1.22;
     text-align: center;
     transform: none;
-    white-space: normal;
-    width: auto;
+    white-space: nowrap;
+    width: max-content;
   }
 
   .profile h1 {
@@ -961,8 +965,7 @@ a:focus-visible {
   }
 
   .photo-caption {
-    font-size: 0.68rem;
-    max-width: 220px;
+    font-size: 0.66rem;
   }
 
   .profile h1 {

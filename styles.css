@@ -725,7 +725,7 @@ a:focus-visible {
 
 @media (max-width: 760px) {
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .nav {
@@ -737,7 +737,11 @@ a:focus-visible {
   }
 
   .nav-links {
-    gap: 16px;
+    gap: 14px 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.88rem;
   }
 
   .page-shell--with-profile {
@@ -785,6 +789,8 @@ a:focus-visible {
     grid-row: 2;
     margin-top: 6px;
     max-width: 112px;
+    font-size: 0.74rem;
+    line-height: 1.22;
     text-align: center;
     transform: none;
     white-space: normal;
@@ -794,28 +800,46 @@ a:focus-visible {
   .profile h1 {
     grid-column: 2;
     grid-row: 1;
-    font-size: 1.35rem;
+    font-size: 1.28rem;
+    line-height: 1.15;
     margin-top: 0;
   }
 
   .title-line {
     grid-column: 2;
+    font-size: 0.98rem;
+    line-height: 1.35;
   }
 
   .location {
     grid-column: 2;
+    font-size: 0.98rem;
+    line-height: 1.35;
     margin-top: 6px;
   }
 
   .contact-list {
     grid-column: 1 / -1;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-bottom: 30px;
-    margin-top: 16px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+  }
+
+  .contact-list a {
+    min-height: 40px;
+    padding: 7px 10px;
+  }
+
+  .contact-link span:last-child {
+    font-size: 0.92rem;
   }
 
   .content {
     padding-top: 0;
+  }
+
+  .section-block h2 {
+    font-size: 1.45rem;
   }
 
   .contact-grid {
@@ -889,16 +913,27 @@ a:focus-visible {
   }
 
   .profile {
-    grid-template-columns: 92px minmax(0, 1fr);
+    column-gap: 14px;
+    grid-template-columns: 84px minmax(0, 1fr);
   }
 
   .profile-photo {
-    height: 92px;
-    width: 92px;
+    height: 84px;
+    width: 84px;
   }
 
   .photo-caption {
-    max-width: 92px;
+    font-size: 0.68rem;
+    max-width: 84px;
+  }
+
+  .profile h1 {
+    font-size: 1.18rem;
+  }
+
+  .title-line,
+  .location {
+    font-size: 0.9rem;
   }
 
   .contact-list {

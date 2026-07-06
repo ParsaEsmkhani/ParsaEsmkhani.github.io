@@ -836,7 +836,7 @@ a:focus-visible {
   .profile h1 {
     font-size: 1.62rem;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
     line-height: 1.15;
     margin: 10px 0 0;
     text-align: center;

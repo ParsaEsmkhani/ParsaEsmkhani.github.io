@@ -78,13 +78,19 @@ a:focus-visible {
   font-size: 0.92rem;
 }
 
-.nav-links a.active {
+.nav-links a.active,
+.nav-extra a.active {
   color: var(--text);
 }
 
-.nav-link-extra {
+.nav-extra {
   position: absolute;
   right: 48px;
+}
+
+.nav-extra a {
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .page-shell {
@@ -782,8 +788,14 @@ a:focus-visible {
     width: 100%;
   }
 
-  .nav-link-extra {
+  .nav-extra {
     position: static;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-extra a {
+    font-size: 0.98rem;
   }
 
   .nav-links a {

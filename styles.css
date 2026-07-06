@@ -193,15 +193,15 @@ a:focus-visible {
 }
 
 .profile-photo {
-  aspect-ratio: 1;
+  aspect-ratio: 735 / 1074;
   background: var(--surface);
   border: 3px solid var(--surface);
-  border-radius: 50%;
+  border-radius: 8px;
   box-shadow: 0 14px 28px rgba(39, 52, 67, 0.09);
   display: block;
-  height: 240px;
+  height: auto;
   object-fit: cover;
-  object-position: center 100%;
+  object-position: center center;
   width: 240px;
 }
 
@@ -817,8 +817,8 @@ a:focus-visible {
   .profile-photo {
     grid-column: 1;
     grid-row: 1;
-    height: 148px;
-    width: 148px;
+    height: auto;
+    width: 164px;
   }
 
   .photo-caption {
@@ -836,7 +836,7 @@ a:focus-visible {
   .profile h1 {
     font-size: 1.62rem;
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     line-height: 1.15;
     margin: 10px 0 0;
     text-align: center;
@@ -960,8 +960,8 @@ a:focus-visible {
   }
 
   .profile-photo {
-    height: 132px;
-    width: 132px;
+    height: auto;
+    width: 150px;
   }
 
   .photo-caption {

@@ -354,6 +354,7 @@ a:focus-visible {
 
 .simple-list,
 .award-list,
+.misc-list,
 .entry ul {
   margin: 0;
   padding-left: 1.25rem;
@@ -361,12 +362,14 @@ a:focus-visible {
 
 .simple-list li,
 .award-list li,
+.misc-list li,
 .entry li {
   margin: 0 0 10px;
 }
 
 .simple-list li:last-child,
 .award-list li:last-child,
+.misc-list li:last-child,
 .entry li:last-child {
   margin-bottom: 0;
 }
@@ -693,7 +696,8 @@ a:focus-visible {
   margin-top: 5px;
 }
 
-.award-list strong {
+.award-list strong,
+.misc-list strong {
   display: block;
   font-weight: 700;
 }

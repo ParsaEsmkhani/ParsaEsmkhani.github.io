@@ -39,6 +39,15 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.highlight-link {
+  background: var(--link-bg);
+  border-radius: 6px;
+  color: var(--accent);
+  display: inline-block;
+  font-weight: 700;
+  padding: 0 0.35em;
+}
+
 .site-header {
   position: sticky;
   top: 0;

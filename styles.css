@@ -95,8 +95,8 @@ a:focus-visible {
 
 .page-shell--with-profile {
   display: grid;
-  gap: 72px;
-  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+  gap: 40px;
+  grid-template-columns: 360px minmax(0, 1fr);
 }
 
 .page-shell:not(.page-shell--with-profile) .content {
@@ -187,9 +187,10 @@ a:focus-visible {
   align-self: start;
   display: grid;
   justify-items: center;
+  margin-left: -20px;
   position: sticky;
   top: 104px;
-  width: 240px;
+  width: 360px;
 }
 
 .profile-photo {
@@ -202,7 +203,7 @@ a:focus-visible {
   height: auto;
   object-fit: cover;
   object-position: center center;
-  width: 240px;
+  width: 270px;
 }
 
 .profile h1 {
@@ -810,6 +811,7 @@ a:focus-visible {
     grid-template-columns: 1fr;
     align-items: start;
     justify-items: center;
+    margin-left: 0;
     position: static;
     width: 100%;
   }

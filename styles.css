@@ -198,7 +198,7 @@ a:focus-visible {
   align-self: start;
   display: grid;
   justify-items: center;
-  margin-left: -20px;
+  margin-left: -52px;
   position: sticky;
   top: 104px;
   width: 360px;
@@ -229,10 +229,10 @@ a:focus-visible {
   font-size: 0.86rem;
   line-height: 1.35;
   margin: 10px 0 0;
-  max-width: none;
+  max-width: 320px;
   text-align: center;
-  white-space: nowrap;
-  width: max-content;
+  white-space: normal;
+  width: 100%;
 }
 
 .title-line,

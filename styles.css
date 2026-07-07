@@ -858,10 +858,11 @@ a:focus-visible {
     margin-top: 6px;
     font-size: 0.74rem;
     line-height: 1.22;
+    max-width: 230px;
     text-align: center;
     transform: none;
-    white-space: nowrap;
-    width: max-content;
+    white-space: normal;
+    width: 100%;
   }
 
   .profile h1 {
@@ -996,7 +997,8 @@ a:focus-visible {
   }
 
   .photo-caption {
-    font-size: 0.66rem;
+    font-size: 0.7rem;
+    max-width: 220px;
   }
 
   .profile h1 {

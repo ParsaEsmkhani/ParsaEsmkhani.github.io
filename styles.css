@@ -747,6 +747,17 @@ a:focus-visible {
   object-position: center 100%;
 }
 
+.apple-music-embed {
+  background: var(--surface);
+  border: 0;
+  border-radius: 8px;
+  display: block;
+  margin-top: 22px;
+  max-width: 760px;
+  overflow: hidden;
+  width: 100%;
+}
+
 .contact-grid {
   display: grid;
   gap: 12px;

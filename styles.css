@@ -702,6 +702,28 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.misc-photo {
+  margin: 0;
+  max-width: 260px;
+}
+
+.misc-photo img {
+  border: 3px solid var(--surface);
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(39, 52, 67, 0.09);
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.misc-photo figcaption {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  margin-top: 8px;
+  text-align: center;
+}
+
 .contact-grid {
   display: grid;
   gap: 12px;

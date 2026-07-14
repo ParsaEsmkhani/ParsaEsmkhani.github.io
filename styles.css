@@ -724,21 +724,11 @@ a:focus-visible {
   text-align: center;
 }
 
-.misc-photo figcaption strong,
-.misc-photo figcaption span {
-  display: block;
-}
-
-.misc-photo figcaption strong {
-  color: var(--text);
-  font-size: 0.84rem;
-}
-
 .running-layout {
   align-items: start;
   display: grid;
   gap: 32px;
-  grid-template-columns: minmax(520px, 1fr) 220px;
+  grid-template-columns: 220px minmax(520px, 1fr);
   max-width: 980px;
   width: 100%;
 }
@@ -753,7 +743,7 @@ a:focus-visible {
 }
 
 .misc-photo--round {
-  justify-self: end;
+  justify-self: start;
   max-width: 200px;
 }
 

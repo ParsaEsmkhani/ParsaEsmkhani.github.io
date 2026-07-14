@@ -1048,8 +1048,20 @@ a:focus-visible {
     text-align: center;
   }
 
+  .running-player p {
+    line-height: 1.55;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 32rem;
+  }
+
   .misc-photo--round {
     justify-self: center;
+  }
+
+  .misc-photo figcaption {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1097,6 +1109,25 @@ a:focus-visible {
 
   .contact-list {
     grid-template-columns: 1fr;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .misc-list {
+    display: inline-block;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .running-player p {
+    font-size: 0.98rem;
+    max-width: 20rem;
+  }
+
+  .apple-music-embed {
+    height: 390px;
   }
 
   .presentation-item {

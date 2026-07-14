@@ -746,6 +746,7 @@ a:focus-visible {
 .misc-photo--round {
   justify-self: start;
   max-width: 200px;
+  text-align: center;
   width: 100%;
 }
 
@@ -1039,19 +1040,17 @@ a:focus-visible {
   .running-layout {
     gap: 18px;
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: stretch;
   }
 
   .running-player {
     justify-self: stretch;
     max-width: none;
-    text-align: center;
+    text-align: left;
   }
 
   .running-player p {
     line-height: 1.55;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 32rem;
   }
 
@@ -1109,16 +1108,6 @@ a:focus-visible {
 
   .contact-list {
     grid-template-columns: 1fr;
-  }
-
-  .content {
-    text-align: center;
-  }
-
-  .misc-list {
-    display: inline-block;
-    max-width: 100%;
-    text-align: left;
   }
 
   .running-player p {

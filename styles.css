@@ -745,7 +745,7 @@ a:focus-visible {
 
 .misc-photo--round {
   justify-self: start;
-  max-width: 200px;
+  max-width: 280px;
   text-align: center;
   width: 100%;
 }
@@ -753,6 +753,9 @@ a:focus-visible {
 .misc-photo--round img {
   aspect-ratio: 1;
   border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
   object-fit: cover;
   object-position: center 100%;
 }

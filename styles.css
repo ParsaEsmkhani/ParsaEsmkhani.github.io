@@ -718,17 +718,18 @@ a:focus-visible {
 
 .misc-photo figcaption {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   line-height: 1.35;
   margin-top: 8px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .running-layout {
   align-items: start;
   display: grid;
-  gap: 32px;
-  grid-template-columns: 220px minmax(520px, 1fr);
+  gap: 36px;
+  grid-template-columns: 280px minmax(520px, 1fr);
   max-width: 980px;
   width: 100%;
 }
@@ -745,6 +746,7 @@ a:focus-visible {
 .misc-photo--round {
   justify-self: start;
   max-width: 200px;
+  width: 100%;
 }
 
 .misc-photo--round img {

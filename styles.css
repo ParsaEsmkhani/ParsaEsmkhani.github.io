@@ -724,12 +724,19 @@ a:focus-visible {
   text-align: center;
 }
 
+.running-layout {
+  align-items: start;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(360px, 1fr);
+  max-width: 1120px;
+}
+
 .running-feature {
   align-items: center;
   display: grid;
   gap: 24px;
   grid-template-columns: 180px minmax(0, 1fr);
-  max-width: 760px;
 }
 
 .running-feature p {
@@ -752,8 +759,6 @@ a:focus-visible {
   border: 0;
   border-radius: 8px;
   display: block;
-  margin-top: 22px;
-  max-width: 760px;
   overflow: hidden;
   width: 100%;
 }
@@ -1022,6 +1027,10 @@ a:focus-visible {
 
   .projects-grid .entry-heading {
     grid-template-rows: auto auto;
+  }
+
+  .running-layout {
+    grid-template-columns: 1fr;
   }
 
   .running-feature {

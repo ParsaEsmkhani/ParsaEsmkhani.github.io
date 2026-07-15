@@ -799,6 +799,49 @@ a:focus-visible {
   width: 100%;
 }
 
+.apple-music-shell {
+  align-items: center;
+  background: var(--link-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  min-height: 132px;
+  padding: 18px;
+  width: 100%;
+}
+
+.apple-music-shell div {
+  display: grid;
+  gap: 6px;
+}
+
+.apple-music-shell strong {
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.apple-music-shell a {
+  font-weight: 700;
+}
+
+.apple-music-shell button {
+  background: var(--accent);
+  border: 0;
+  border-radius: 8px;
+  color: var(--surface);
+  cursor: pointer;
+  flex: 0 0 auto;
+  font: inherit;
+  font-weight: 700;
+  padding: 12px 16px;
+}
+
+.apple-music-shell button:hover {
+  background: var(--ink);
+}
+
 .contact-grid {
   display: grid;
   gap: 12px;
@@ -1147,6 +1190,11 @@ a:focus-visible {
 
   .apple-music-embed {
     height: 390px;
+  }
+
+  .apple-music-shell {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .presentation-item {

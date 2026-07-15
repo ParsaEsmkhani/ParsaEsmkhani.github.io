@@ -702,6 +702,33 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.architecture-gallery {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+  overflow-x: auto;
+  padding: 2px 2px 14px;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--line) transparent;
+}
+
+.architecture-slide {
+  flex: 0 0 min(78vw, 360px);
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.architecture-slide img {
+  aspect-ratio: 4 / 3;
+  border: 3px solid var(--surface);
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(39, 52, 67, 0.09);
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
 .misc-photo {
   margin: 0;
   max-width: 260px;

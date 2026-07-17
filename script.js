@@ -62,6 +62,10 @@ musicEmbeds.forEach((shell) => {
 
 const architectureGallery = document.querySelector(".architecture-gallery");
 const architectureControls = document.querySelectorAll("[data-gallery-scroll]");
+const architectureLightbox = document.querySelector("[data-lightbox]");
+const architectureLightboxImage = document.querySelector("[data-lightbox-image]");
+const architectureLightboxTriggers = document.querySelectorAll("[data-lightbox-src]");
+const architectureLightboxClosers = document.querySelectorAll("[data-lightbox-close]");
 
 architectureControls.forEach((button) => {
   button.addEventListener("click", () => {
@@ -78,4 +82,45 @@ architectureControls.forEach((button) => {
       left: direction * distance,
     });
   });
+});
+
+const closeArchitectureLightbox = () => {
+  if (!architectureLightbox || !architectureLightboxImage) {
+    return;
+  }
+
+  architectureLightbox.hidden = true;
+  architectureLightboxImage.src = "";
+  architectureLightboxImage.alt = "";
+  document.body.classList.remove("is-lightbox-open");
+};
+
+architectureLightboxTriggers.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!architectureLightbox || !architectureLightboxImage) {
+      return;
+    }
+
+    const image = button.querySelector("img");
+    const src = button.dataset.lightboxSrc;
+
+    if (!src) {
+      return;
+    }
+
+    architectureLightboxImage.src = src;
+    architectureLightboxImage.alt = image?.alt || "Enlarged architecture photo";
+    architectureLightbox.hidden = false;
+    document.body.classList.add("is-lightbox-open");
+  });
+});
+
+architectureLightboxClosers.forEach((button) => {
+  button.addEventListener("click", closeArchitectureLightbox);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeArchitectureLightbox();
+  }
 });

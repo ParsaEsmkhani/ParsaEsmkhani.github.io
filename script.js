@@ -59,3 +59,23 @@ musicEmbeds.forEach((shell) => {
     observer.observe(shell);
   }
 });
+
+const architectureGallery = document.querySelector(".architecture-gallery");
+const architectureControls = document.querySelectorAll("[data-gallery-scroll]");
+
+architectureControls.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!architectureGallery) {
+      return;
+    }
+
+    const direction = button.dataset.galleryScroll === "previous" ? -1 : 1;
+    const slide = architectureGallery.querySelector(".architecture-slide");
+    const distance = slide ? slide.getBoundingClientRect().width + 14 : 360;
+
+    architectureGallery.scrollBy({
+      behavior: "smooth",
+      left: direction * distance,
+    });
+  });
+});

@@ -702,20 +702,79 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.architecture-controls {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.88rem;
+  font-weight: 700;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.architecture-controls div {
+  display: flex;
+  gap: 8px;
+}
+
+.architecture-control {
+  align-items: center;
+  background: var(--link-bg);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  height: 36px;
+  justify-content: center;
+  padding: 0;
+  width: 36px;
+}
+
+.architecture-control:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--surface);
+}
+
 .architecture-gallery {
   display: flex;
   gap: 14px;
   margin-top: 12px;
   overflow-x: auto;
-  padding: 2px 2px 14px;
+  padding: 2px 2px 18px;
   scroll-snap-type: x mandatory;
-  scrollbar-color: var(--line) transparent;
+  scrollbar-color: var(--accent) var(--link-bg);
+  scrollbar-width: auto;
+}
+
+.architecture-gallery::-webkit-scrollbar {
+  height: 14px;
+}
+
+.architecture-gallery::-webkit-scrollbar-track {
+  background: var(--link-bg);
+  border-radius: 999px;
+}
+
+.architecture-gallery::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border: 3px solid var(--link-bg);
+  border-radius: 999px;
 }
 
 .architecture-slide {
   flex: 0 0 min(78vw, 360px);
   margin: 0;
   scroll-snap-align: start;
+}
+
+.architecture-slide a {
+  cursor: zoom-in;
+  display: block;
 }
 
 .architecture-slide img {

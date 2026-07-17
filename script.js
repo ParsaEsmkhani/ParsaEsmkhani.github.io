@@ -24,7 +24,7 @@ const loadMusicEmbed = (shell) => {
   iframe.allow = "autoplay *; encrypted-media *; fullscreen *; clipboard-write";
   iframe.frameBorder = "0";
   iframe.height = "450";
-  iframe.loading = "lazy";
+  iframe.loading = "eager";
   iframe.sandbox =
     "allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation";
   iframe.src = src;
@@ -37,27 +37,7 @@ musicEmbeds.forEach((shell) => {
   const button = shell.querySelector("[data-load-music]");
   button?.addEventListener("click", () => loadMusicEmbed(shell));
 
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (!entries.some((entry) => entry.isIntersecting)) {
-          return;
-        }
-
-        observer.disconnect();
-
-        if ("requestIdleCallback" in window) {
-          window.requestIdleCallback(() => loadMusicEmbed(shell), { timeout: 1200 });
-          return;
-        }
-
-        window.setTimeout(() => loadMusicEmbed(shell), 300);
-      },
-      { rootMargin: "300px 0px" },
-    );
-
-    observer.observe(shell);
-  }
+  window.setTimeout(() => loadMusicEmbed(shell), 0);
 });
 
 const architectureGallery = document.querySelector(".architecture-gallery");
